@@ -1,0 +1,63 @@
+.btn{
+    font-family: $title-font;
+    
+    border: 1px solid $main-txt-dark;
+    color: $blue;
+    
+    font-size: 0.9rem;
+
+    padding: 0.8rem 2rem;
+    border-radius: 0.75rem;
+    min-width: 1rem;
+
+    transition: 300ms ease-in;
+    &:hover{
+        box-shadow: 3px 3px 2px $blue;
+    }
+}
+
+@media (max-width: 770px) {
+    .btn{
+        padding: 0.5rem 1.2rem;
+    }
+}
+@media (max-width: 564px) {
+    .btn{
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
+
+
+.btn-work{
+    font-family: $main-font;
+    border: 2px solid $main-txt-dark;
+    color: $main-txt-dark;
+    text-align: center;
+    max-width: 14rem;
+    padding: 0.7rem 0.8rem;
+    &:hover{
+        box-shadow: 3px 3px 2px $main-txt-dark;
+       
+    }
+}
+
+.up-icon{
+    border: 2px solid red;
+    background-color: $blue;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 8rem;
+    right: 6rem;
+
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    img{
+        font-size: 0.8rem;
+        width: 1rem;
+        aspect-ratio: 1;
+        color: white;
+    }
+}
