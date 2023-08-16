@@ -1,20 +1,20 @@
 //* Hero section
 
 .hero{
-    min-height: 100vh;
+    min-height: calc(100vh - 3rem);
     @extend %section;
-    padding-top: 10rem;
-    background: linear-gradient(170deg, $blue 0%,$grey 70%);
+    background: linear-gradient(170deg, $blue-klein 0%,$grey 70%);
 }
 
 .hero-content{
-    max-width: 70vw;
+    max-width: 80vw;
+    
     h1 {
         font-family: $hero-font;
         text-transform: uppercase;
         font-size: 14rem;
         color: $grey;
-        
+        text-align: left;
         margin-bottom: 2rem;
     }
 }
@@ -24,7 +24,7 @@
     font-family: $txt-font;
     
     h2 {
-        color: $blue;
+        color: $blue-klein;
         font-size: 2.5rem;
         font-weight: 400;
         margin-bottom: 2rem;
@@ -69,7 +69,7 @@
 .language{
     border: 1px solid $blue;
     background-color: rgba(250, 250, 250, 0.131);
-    width: 80vw;
+    width: 90vw;
     margin-top: 5rem;
     
     display: flex;
@@ -82,7 +82,7 @@
     display: flex;
     
 
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
 
     font-family: $title-font;
@@ -126,6 +126,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding: 2rem;
     margin-bottom: 3rem;
     ul {
         list-style: none;
@@ -171,7 +172,10 @@
     }
     
 }
+
+
 .featured{
+
     width: 80vw;
     
     display: flex;
@@ -357,143 +361,227 @@
  @media (max-width: 770px){
 
     .hero-content h1{
-        font-size: 7.2rem;
+        font-size: 5.8rem;
         
     }
 
     .about h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: blue;
     }
 
     .about p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     
     .skills h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .language {
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        gap: 3rem;
+    }
+    .language-item {
+        width: 80%;
+        border: 1px solid $blue;
+        border-radius: 2rem;
+
     }
 
     .portfolio h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
 
     }
     .portfolio h3 {
         font-size: 1rem;
     }
     .contact-content h2 {
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
     }
     .contact-content h3 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .footer-links {
-        font-size: 0.8rem;
+        font-size: 0.65rem;
     }
 
     }
-   
-    
- 
- 
+
  @media (max-width: 580px){
-     
-    .intro{
-        font-size: 2.8rem;
-    }
-    .slogan{
-        font-size: 1.01rem;
-    }
 
-    .about h2{
-        font-size: 2.4rem;
-    }
-    .quote h3{
-    font-size: 1.2rem;
+    
+    .hero-content h1{
+        font-size: 4.5rem;
+        font-weight: 300;
+        
     }
 
+    .about {
+        width: 80vw;
+        float: none;
+    }
 
+    .about h2 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        
+    }
 
-    .language{
-        margin-top: 1rem;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .about p {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+    
+    .skills h2 {
+        font-size: 1.3rem;
+    }
+
+    .language {
+        flex-direction: column;
         align-items: center;
+        border: none;
+        gap: 3rem;
     }
-    .language > div{
-        animation: none;
-        width: 33%;
-        margin: 0;
-    }
-}
- 
- // Iphone SE & similar
- @media (max-width: 450px){
-    .intro{
-        font-size: 2.2rem;
-    }
-    .slogan{
-        font-size: 0.8rem;
+    .language-item {
+        width: 90%;
+        border: 1px solid $blue;
+        border-radius: 2rem;
+
     }
 
-    .about h2{
-            font-size: 2.3rem;
+    .portfolio h2 {
+        font-size: 1.3rem;
+
     }
-    .about-content{
-            padding: 0;
-    }
-    .about-text-two{
-        padding: 0;
+    .portfolio h3 {
+        margin: 5rem 0 2rem;
+        font-size: 1.3rem;
         text-align: center;
     }
-    .quote h3{
-        font-size: 0.93rem;
-    }
-    .skills{
-        padding: 1rem;
-    }
-    .skills h2{
-        font-size: 2.7rem;
-        margin-bottom: O.2rem;
-    }
-    .skills p{
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-    }
-    
-   
-    .portfolio-content {
-       width: 100vw;
 
-       .portfolio-works{
-        width: 80vw;
-       }
-       h2{
-        font-size: 2.1rem;
-        margin-bottom: 1rem;
+    .featured {
+        flex-flow: column wrap;
+        align-items: center;
+        .project {
+            width: 100%;
         }
     }
-    .work{
-        width: 100%;
-        padding: 2rem 1rem;
+
+    .contact-content {
+        width: 70vw;
+    }
+    .contact-content h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .contact-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-links {
+        font-size: 0.9rem;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 1rem;
+        .social {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
     }
    
-    .contact-content{
-        width: 90vw;
-        h2{
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        p{
-            font-size: 0.7rem;
-        }
+ 
+ // Iphone SE & similar
+@media (max-width: 450px){
+
+    
+    .hero-content h1{
+        font-size: 4.5rem;
+        font-weight: 300;
+        text-align: center;
+        
+    }
+
+    .about {
+        width: 80vw;
+        float: none;
+    }
+
+    .about h2 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        
+    }
+
+    .about p {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
     }
     
-   
-   
- }
+    .skills h2 {
+        font-size: 1.3rem;
+    }
+
+    .language {
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        gap: 3rem;
+    }
+    .language-item {
+        width: 90%;
+        border: 1px solid $blue;
+        border-radius: 2rem;
+
+    }
+
+    .portfolio h2 {
+        font-size: 1.3rem;
+
+    }
+    .portfolio h3 {
+        margin: 5rem 0 2rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .featured {
+        flex-flow: column wrap;
+        align-items: center;
+        .project {
+            width: 100%;
+        }
+    }
+
+    .contact-content {
+        width: 70vw;
+    }
+    .contact-content h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .contact-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-links {
+        font-size: 0.9rem;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 1rem;
+        .social {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    }
 
 
 
