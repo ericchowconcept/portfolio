@@ -43,7 +43,7 @@ header {
           align-items: center;
   gap: 1rem;
   min-height: 3rem;
-  padding: 1rem;
+  padding: 1rem 3rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -54,7 +54,6 @@ header {
 }
 
 header a {
-  padding-right: 3rem;
   color: #eeeeee;
   font-family: "Poppins", sans-serif;
 }
@@ -62,7 +61,6 @@ header a {
 header .logo {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
-  padding-left: 3rem;
   color: #eeeeee;
   overflow: hidden;
 }
@@ -110,7 +108,8 @@ header .logo:hover {
 
 @media (max-width: 450px) {
   header {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -410,9 +409,9 @@ header .logo:hover {
   font-weight: 300;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .hero-content h1 {
-    font-size: 8.2rem;
+    font-size: 10rem;
   }
   .about h2 {
     font-size: 1.9rem;
@@ -600,9 +599,8 @@ header .logo:hover {
 
 @media (max-width: 450px) {
   .hero-content h1 {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
     font-weight: 300;
-    text-align: center;
   }
   .about {
     width: 80vw;
@@ -610,7 +608,7 @@ header .logo:hover {
   }
   .about h2 {
     font-size: 1.3rem;
-    font-weight: 300;
+    font-weight: 400;
   }
   .about p {
     font-size: 0.9rem;

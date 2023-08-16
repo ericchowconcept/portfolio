@@ -6,7 +6,7 @@ header{
     align-items: center;
     gap: 1rem;
     min-height: 3rem;
-    padding: 1rem;
+    padding: 1rem 3rem;
     width: 100%;
     position: fixed;
     top: 0;
@@ -16,7 +16,6 @@ header{
     font-weight: 200;
     
     a {
-        padding-right: 3rem;
         color: $grey;
         font-family: $title-font;
     }
@@ -24,7 +23,6 @@ header{
     .logo{
         font-family: $title-font;
         text-transform: uppercase;
-        padding-left: 3rem;
         color: $grey;
         overflow: hidden;
         
@@ -71,7 +69,8 @@ header{
 }
 @media (max-width: 450px) {
     header {
-        font-size: 1.3rem;
+        font-size: 1rem;
+        padding: 1rem 2rem;
     }
 }
  
