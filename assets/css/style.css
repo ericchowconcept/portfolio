@@ -90,11 +90,8 @@ header .logo:hover {
 }
 
 @media (max-width: 959px) {
-  .logo {
-    font-size: 1.3rem;
-  }
-  .logo span {
-    display: none;
+  header {
+    font-size: 1.5rem;
   }
 }
 
@@ -205,7 +202,7 @@ header .logo:hover {
 }
 
 .hero-content {
-  width: 70vw;
+  max-width: 70vw;
 }
 
 .hero-content h1 {
@@ -213,7 +210,6 @@ header .logo:hover {
   text-transform: uppercase;
   font-size: 14rem;
   color: #eeeeee;
-  width: 100%;
   margin-bottom: 2rem;
 }
 
@@ -231,6 +227,7 @@ header .logo:hover {
 }
 
 .about p {
+  text-align: justify;
   color: #020202;
   font-size: 1.5rem;
   font-weight: 300;
@@ -339,6 +336,10 @@ header .logo:hover {
   list-style: none;
 }
 
+.language-info p {
+  text-align: center;
+}
+
 .portfolio {
   min-height: 100vh;
   background-color: #eeeeee;
@@ -358,6 +359,16 @@ header .logo:hover {
   border-bottom: 1px solid #1b05d2;
 }
 
+.portfolio h3 {
+  margin-bottom: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.portfolio h3 a {
+  color: #1b05d2;
+}
+
 .featured {
   width: 80vw;
   display: -webkit-box;
@@ -370,12 +381,24 @@ header .logo:hover {
 }
 
 .project {
-  width: 49%;
-  height: 10rem;
-  border: 1px solid #1b05d2;
+  width: 33%;
+  height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 2rem;
+  border: 1px solid #1b05d2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.project img:hover {
+  background-color: rgba(76, 72, 72, 0.312);
 }
 
 .contact {
@@ -396,7 +419,7 @@ header .logo:hover {
 }
 
 .contact-content {
-  width: 45vw;
+  width: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,79 +491,89 @@ header .logo:hover {
 }
 
 @media (max-width: 1200px) {
-  .intro, h2 {
-    font-size: 4.3rem;
+  .hero-content h1 {
+    font-size: 8.2rem;
   }
-  .quote h3 {
-    font-size: 2.7rem;
+  .about h2 {
+    font-size: 1.9rem;
+    color: blue;
+  }
+  .about p {
+    font-size: 1.3rem;
+  }
+  .skills h2 {
+    font-size: 1.8rem;
+  }
+  .portfolio h2 {
+    font-size: 1.8rem;
+  }
+  .contact-content h2 {
+    font-size: 6.2rem;
+    text-align: center;
   }
 }
 
 @media (max-width: 992px) {
-  .intro {
-    font-size: 3.4rem;
+  .hero-content h1 {
+    font-size: 7.2rem;
   }
-  .slogan {
-    font-size: 1.23rem;
+  .about h2 {
+    font-size: 1.8rem;
+    color: blue;
   }
-  .quote h3 {
-    font-size: 2.2rem;
+  .about p {
+    font-size: 1.3rem;
+  }
+  .skills h2 {
+    font-size: 1.5rem;
+  }
+  .portfolio h2 {
+    font-size: 1.5rem;
+  }
+  .portfolio h3 {
+    font-size: 1rem;
+  }
+  .contact-content h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .contact-content h3 {
+    font-size: 1.4rem;
+  }
+  .footer-links {
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 770px) {
-  .hero-content {
-    width: 80vw;
+  .hero-content h1 {
+    font-size: 7.2rem;
   }
   .about h2 {
-    font-size: 3.1rem;
+    font-size: 1.8rem;
+    color: blue;
   }
-  .about-desc {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  .about p {
+    font-size: 1.3rem;
   }
-  .about-desc .about-text-one, .about-desc .about-photo {
-    width: 95%;
+  .skills h2 {
+    font-size: 1.5rem;
   }
-  .about-desc-two {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  .portfolio h2 {
+    font-size: 1.5rem;
   }
-  .about-desc-two .about-text-two, .about-desc-two .about-photo {
-    width: 95%;
-  }
-  .quote h3 {
-    font-size: 1.6rem;
-  }
-  .language div {
-    width: 8rem;
-    font-weight: 400;
-    font-size: 0.8rem;
-  }
-  .portfolio-works {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .portfolio-works .work {
-    margin: auto;
-    width: 95%;
-  }
-  .contact-content {
-    width: 80vw;
+  .portfolio h3 {
+    font-size: 1rem;
   }
   .contact-content h2 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 5rem;
+    text-align: center;
   }
-  .contact-content p {
+  .contact-content h3 {
+    font-size: 1.4rem;
+  }
+  .footer-links {
     font-size: 0.8rem;
-    text-align: justify;
   }
 }
 
